@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<title>Franklin Weather</title>
+	<meta name="description" content="Short Description of the page.">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="weatherpage.css">
+	</head>
+
+<body>
+	<section id="logo">
+		<header id="page-header">
+		<!-- logo and title-->
+			<img src="/weather/logo.png" alt="Find your local weather &amp; road condition Updates for Franklin, ID; Greenville, SC; and Springfeild, IL.">
+			<span class="site-name">Weather Site</span>
+		</header>
+	</section>
+	<section id="nav">
+		<nav>
+			<a href="home.html" class="bar-items">Home</a>
+			<a href="franklin-weather.html" class="bar-items">Franklin, ID</a>
+			<a href="greenville-weather.html" class="bar-items">Greenville, SC</a>
+			<a href="" class="bar-items">Springfeild, IL</a>
+			<a href="search.html" class="bar-items">Search</a>
+		</nav>
+	</section>
+	<main>
+		<!-- h1 out section for to center on page-->
+		<h1>Franklin, ID</h1>
+		<!-- stats id creates a container around main content center heading-->
+		<section id="stats">
+			<section class="box" id="curr-temp">
+				<h2>Current Temperature</h2>
+				<div>
+					<h2 id="currentTemp"></h2>
+				</div>
+			</section>
+			<section class="box" id="curr-cond">
+				<h2>Current Conditions</h2>
+				<ul>
+					<li id="summary"></li>
+					<li id="wind"></li>
+					<li id="feelsLike"></li>
+				</ul>
+			</section>
+			<section class="box" id="hr-for">
+				<h2>Hourly Forcast</h2>
+				<ul>
+						<li>12am: 67</li>
+						<li>1 am: 67</li>
+						<li>2 am: 69</li>
+						<li>3 am: 69</li>
+						<li>4 am: 69</li>
+						<li>5 am: 70</li>
+						<li>6 am: 69</li>
+						<li>7 am: 72</li>
+						<li>8 am: 74</li>
+						<li>9 am: 77</li>
+						<li>10 am: 79</li>
+						<li>11 am: 81</li>
+						<li>12 am: 84</li>
+						<li>1 pm: 86</li>
+						<li>2 pm: 88</li>
+						<li>3 pm: 90</li>
+						<li>4 pm: 90</li>
+						<li>5 pm: 85</li>
+						<li>6 pm: 83</li>
+						<li>7 pm: 79</li>
+						<li>8 pm: 74</li>
+						<li>9 pm: 70</li>
+						<li>10 pm: 68</li>
+						<li>11pm: 66</li>
+				</ul>
+			</section>
+		</section>
+	</main>
+	<footer id="footer">
+		<p>©2017 Alex Matheson</p>
+	</footer>
+</body>
+	<script
+			src="https://code.jquery.com/jquery-3.2.1.min.js"
+			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			crossorigin="anonymous">
+	</script>
+	<script src="/weather/modules.js"></script>
+	<script src="/weather/franklin-weather.js"></script>
+</html>

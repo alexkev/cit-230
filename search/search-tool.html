@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Search for Weather</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="search-css.css">
+</head>
+<body>
+	<section id="logo">
+		<header id="page-header">
+			<!-- logo and title-->
+			<img src="logo.png" alt="Find your local weather & road condition Updates for Franklin, ID; Greenville, SC; and Springfeild, IL.">
+			<span class="site-name">Weather Site</span>
+		</header>
+	</section>
+	<section id="nav">
+		<nav>
+			<a href="home.html" class="bar-items">Home</a>
+			<a href="franklin-weather.html" class="bar-items">Franklin, ID</a>
+			<a href="greenville-weather.html" class="bar-items">Greenville, SC</a>
+			<a href="" class="bar-items">Springfeild, IL</a>
+			<a href="search.html" class="bar-items">Search</a>
+		</nav>
+	</section>
+	<main>
+		<form method="get" action="//autocomplete.wunderground.com/aq" id="searchform">
+			<input type="search" name="query" id="query">
+			<input type="submit" name="submit" value="Search" id="send">
+		</form>
+		<!--    Display the search results here  -->
+		<h2>Search results</h2>
+		<section id="searchResults">
+		</section>
+	</main>
+</body>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+	</script>
+	<script src="search-tool.js"></script>
+</html>

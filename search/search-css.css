@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Sansita');
+
+.site-name {
+	font-size: 30px;
+}
+
+main {
+/*
+	background-image: url("sunny-background.jpeg");
+	background-color: #03337d;
+*/
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: Sansita, "second choice", generic-family;
+	font-size: 30px;
+	text-align: center;
+}
+
+/* added color to see on background */
+h1 {
+	color: whitesmoke;
+	font-size: 40px;
+}
+
+/* created flex box to dispplay nav items*/
+nav {
+	display: flex;
+	flex-flow: column wrap;
+	overflow: hidden;
+	padding: 1em;
+	background-color: whitesmoke;
+	opacity: 1;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+
+nav a {
+	padding: 1em .15em;
+}
+/* hover to identify link */
+nav a:link {
+	text-decoration: none;
+	color: black;
+}
+
+nav a:hover {
+	background-color: black;
+	color: white;
+	position: relative;
+	bottom: 5px;
+}
+/* logo picture */
+#page-header img {
+	height: 100px;
+	align-items: center;
+	vertical-align: middle;
+}
+
+h2 {
+	text-align: center;
+}
+
+.box {
+	border: .5px solid;
+	border-radius: 10px;
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-bottom: 1em;
+	padding: 2em;
+	text-align: center;
+	background-color: whitesmoke;
+	opacity: 0.7;
+}
+
+.box img {
+	height: 45px;
+	align-items: center;
+	vertical-align: middle;
+	align-content: center;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+footer {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: flex-end;
+	background-color: whitesmoke;
+	margin-bottom: 50px;
+}
+
+@media screen and (max-width: 700px) {
+
+	/* makes hourly forcast disappear */
+	#hr-for {
+		display: none;
+	}
+
+	/* sends nav to the bottom */
+	nav {
+		display: inherit;
+		position: fixed;
+		bottom: 0;
+	}
+}
+
+@media screen and (min-width: 700px) {
+
+	/* changes content position */
+	#stats {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	/* changes position */
+	#curr-cond {
+		order: -1;
+	}
+
+	nav {
+		display: inherit;
+	}
+}

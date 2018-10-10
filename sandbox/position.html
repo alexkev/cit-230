@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Positioning</title>
+	<style>
+		h1 {
+			position: relative;
+			top: 12px;
+			left: 20px;
+		}
+		ul {
+			position: relative;
+			top: 20px;
+			left: 50px;
+			list-style: none;
+		}
+		li strong {
+			position: relative;
+			bottom: 12px;
+			right: 7px;
+		}
+	</style>
+</head>
+<body>
+	<h1 class="position">css {position:________}</h1>
+	<ul class="position">
+		<li><strong>static</strong>	Default value. Elements render in order, as they appear in the document flow</li>
+		<li><strong>absolute</strong>	The element is positioned relative to its first positioned (not static) ancestor element</li>
+		<li><strong>fixed</strong>	The element is positioned relative to the browser window</li>
+		<li><strong>relative</strong>	The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position</li>
+		<li><strong>sticky</strong>	The element is positioned based on the user's scroll position
+
+		A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+
+		Note: Not supported in IE/Edge 15 or earlier. Supported in Safari from version 6.1 with a -webkit- prefix.</li>
+		<li><strong>initial</strong>	Sets this property to its default value. Read about initial</li>
+		<li><strong>inherit</strong>	Inherits this property from its parent element. Read about inherit	</li>
+	</ul>
+</body>
+</html>
